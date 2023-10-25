@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>product List Page</title>
+    </head>
+    <body>
+        <h1>product List Page</h1>
+        <p><a href="{% url 'product_create' %}">+ Create Product</a></p>
+
+        {% for product in object_list %}
+        <p>
+        <a href="{% url 'product_detail' product.pk%}">{{ product.name }}</a>
+        </p>
+        {% endfor %}
+    
+    </body>
+</html>

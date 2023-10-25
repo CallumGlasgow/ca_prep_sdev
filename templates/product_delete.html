@@ -1,0 +1,15 @@
+
+
+<html>
+    <head>
+        <title>Log In</title>
+    </head>
+    <body>
+        <h2>Log In</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <p>Are you sure you want to delete "{{ product.name }}"?</p>
+            <input type="submit" value="Confirm"/>
+        </form>
+    </body>
+</html>
